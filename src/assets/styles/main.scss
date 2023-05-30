@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+
 /**
  * Use this file to import partials.
  * Do not include SCSS code in this file.
@@ -28,3 +31,15 @@
 /**
  * Do NOT include anything else in this file!
  */
+
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-main text-2xl text-white py-4 px-8 mb-20 rounded;
+  }
+
+  .title {
+    @apply pt-10 mb-2 text-3xl font-bold;
+  }
+}

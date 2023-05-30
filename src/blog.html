@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>UOC Boilerplate</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR INICIO -->
+    <nav class="bg-navmain">
+        <div class="container mx-auto max-w-7xl px-6 sm:px-8 md:px-10">
+            <div class="flex items-center justify-between py-4">
+                <img src="assets/images/chess-logo.png" alt="Logo enorque club" width="30" height="auto">
+                <button class="text-white lg:hidden" type="button">
+                    <img src="assets/images/nav-icon.png" width="30" height="auto">
+                </button>
+
+                <div class="hidden lg:block" id="navbarsExampleXxl">
+                    <ul class="flex space-x-4">
+                        <li>
+                            <a class="text-navgray" href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="text-navgray" aria-current="page" href="club.html">Club</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a class="text-navgray" href="#">Galeria</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <div class="bg-navmain">
+        <div class="container mx-auto max-w-7xl px-6 sm:px-8 md:px-10">
+            <div class="p-12 text-white rounded">
+                <div class="px-0">
+                    <h1 class="text-4xl italic">¡Miembros del Enroque Club triunfan en el Campeonato Nacional de
+                        Ajedrez!</h1>
+                    <p class="text-right">by Enrique Pereira</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto max-w-7xl px-6 sm:px-8 md:px-10">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 mt-12">
+            <div class="col-span-12 pb-4">
+                <p class="text-gray-700 text-xl mb-4">El pasado fin de semana se llevó a cabo el Campeonato Nacional de
+                    Ajedrez en la ciudad de Barcelona.
+                    ¡Y nuestros miembros del Enroque Club dieron un gran espectáculo!</p>
+            </div>
+            <div class="col-span-12 md:col-span-4 pb-4 text-center italic text-3xl text-blockquote">
+                <blockquote>
+                    Nuestro jugador más destacado, Martín Pérez, logró el primer lugar
+                </blockquote>
+            </div>
+            <div class="col-span-12 md:col-span-8 pb-4">
+                <p class="text-gray-700 text-xl mb-4">Nuestro jugador más destacado, Martín Pérez, logró el primer lugar
+                    en la categoría de mayores de 18
+                    años, mientras que nuestra joven promesa, María García, se llevó el primer lugar en la categoría
+                    sub-12.</p>
+            </div>
+            <div class="col-span-12 pb-4">
+                <img class="w-full pb-6" src="assets/images/blog1.png">
+                <hr>
+            </div>
+            <div class="col-span-12 pb-4">
+                <h3 class=" mb-2 text-3xl font-bold">Resultados del Campeonato Nacional</h3>
+                <p class="text-gray-700 text-xl mb-4">El Enroque Club de Ajedrez se enorgullece en anunciar que tres de
+                    sus miembros han logrado destacar
+                    en el último Campeonato Nacional de Ajedrez:</p>
+                <include src="./views/resultados.html"></include>
+                <p class="pt-4 text-gray-700 text-xl mb-4">Cada uno de ellos mostró un desempeño excepcional durante la
+                    competencia, lo que les
+                    permitió obtener estos impresionantes resultados. ¡Felicitaciones a nuestros talentosos jugadores!
+                </p>
+            </div>
+            <div class="col-span-12 pb-4">
+                <img class="w-full pb-4" src="assets/images/blog2.png">
+                <p class="text-gray-700 text-xl mb-4">Además, otros miembros del club también obtuvieron resultados
+                    impresionantes, demostrando que el
+                    Enroque Club es uno de los clubes de ajedrez más destacados del país.</p>
+                <p class="text-gray-700 text-xl mb-4">Estamos muy orgullosos de nuestros miembros y esperamos seguir
+                    viendo grandes logros en el futuro.
+                    ¡Felicidades a todos los participantes por su excelente desempeño!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER INICIO -->
+    <div class="bg-main">
+        <div class="container bg-navmain mx-auto max-w-7xl px-6 sm:px-8 md:px-10">
+            <footer class="p-4">
+                <ul class="flex justify-center border-b border-white pb-4 mb-4">
+                    <li><a href="#" class="nav-link p-2 text-white">info@enroqueclubajedrez.com</a></li>
+                </ul>
+                <div class=" justify-between items-center py-3 md:flex md:flex-wrap">
+                    <a href="/" class="flex justify-center mb-4 lg:m-0 lg:w-1/3 lg:block">
+                        <img class="logo-footer" src="assets/images/chess-logo.png" alt="Logo Enroque Club" width="30"
+                            height="auto">
+                    </a>
+                    <ul class="flex items-center justify-center">
+                        <li class="mr-2 md:mr-4"><a href="index.html" class="nav-link px-2 text-white">Inicio</a></li>
+                        <li class="mr-2 md:mr-4"><a href="club.html" class="nav-link px-2 text-white">Club</a></li>
+                        <li class="mr-2 md:mr-4"><a href="blog.html" class="nav-link px-2 text-white">Blog</a></li>
+                        <li class="mr-2 md:mr-0"><a href="#" class="nav-link px-2 text-white">Galeria</a></li>
+                    </ul>
+                    <ul class="flex lg:w-1/3 justify-center lg:justify-end">
+                        <li class="mr-2"><a href="#" class="px-2 text-muted"><img src="assets/images/fb-logo.png"
+                                    alt="logo facebook" width="30" height="auto"></a></li>
+                        <li class="mr-2"><a href="#" class="px-2 text-muted"><img src="assets/images/tw-logo.png"
+                                    alt="logo twitter" width="30" height="auto"></a></li>
+                        <li><a href="#" class="px-2 text-muted"><img src="assets/images/it-logo.png"
+                                    alt="logo instagram" width="30" height="auto"></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- FOOTER FIN -->
+
+</body>
+
+</html>
